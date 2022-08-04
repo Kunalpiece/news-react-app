@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "US to probe claims Sikh turbans taken at border with Mexico",
+            "description": "Border Patrol officers have been accused of confiscating the turbans of dozens of Sikh asylum seekers.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-62415377",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/5EAF/production/_126193242_borderyuma.jpg",
+            "publishedAt": "2022-08-03T22:07:20.8448121Z",
+            "content": "By Bernd Debusmann JrBBC News\r\nUS authorities say they are investigating reports that the turbans of Sikh asylum seekers were confiscated after they were detained at the border. \r\nAccording to human … [+2135 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "China gears up for military drills after Pelosi visit to Taiwan",
+            "description": "China is gearing up for five days of \"necessary\" military exercises following Nancy Pelosi's trip to Taiwan.",
+            "url": "http://www.bbc.co.uk/news/world-asia-62416363",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/8D2B/production/_126193163_hi077783904.jpg",
+            "publishedAt": "2022-08-03T22:07:18.2048434Z",
+            "content": "China is gearing up for military exercises in the seas around Taiwan following top US politician Nancy Pelosi's trip to the island.\r\nMs Pelosi left on Wednesday after a brief but controversial visit … [+3217 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Viktor Orban alone in Europe but among friends in Texas",
+            "description": "The controversial Hungarian leader will be warmly received when he addresses US Republicans.",
+            "url": "http://www.bbc.co.uk/news/world-europe-62408368",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/B823/production/_126193174_orban_getty.png",
+            "publishedAt": "2022-08-03T21:37:17.6257468Z",
+            "content": "By Nick ThorpeBBC News, Budapest\r\nHungarian Prime Minister Viktor Orban may have alienated his EU neighbours, who accuse him of undermining democracy, but he will get a warm reception thousands of mi… [+10188 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "After Kansas defeat, what's next for abortion bans?",
+            "description": "While the battle to ban abortion in Kansas may have been lost, the fight continues across the US.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-62413578",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/EEB5/production/_126190116_hi077764060.jpg",
+            "publishedAt": "2022-08-03T20:07:23.8921129Z",
+            "content": "By Robin Levinson-KingBBC News\r\nThe votes are in, and Kansans have been unequivocal - the right to abortion in the state stays.\r\nMore than 900,000 Kansans - about a third of the state's total populat… [+5054 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Zawahiri's victims: What it feels like to hear he's gone",
+            "description": "The al-Qaeda leader's death hits home to those he robbed of a husband, a wife, or their eyesight.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-62412408",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/169CB/production/_126191629__120487321_gettyimages-141386966.jpg",
+            "publishedAt": "2022-08-03T19:37:25.6882311Z",
+            "content": "By Sam CabralBBC News, Washington\r\nAmericans danced in the streets over the death of al-Qaeda leader Osama bin Laden. The killing of his successor has been met with a more muted response - but those … [+5401 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Alex Jones concedes Sandy Hook school shooting was '100% real'",
+            "description": "Parents of a child killed in the shooting are seeking at least $150m (£123m) in a defamation trial.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-62415376",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/2921/production/_126192501_hi077776571.jpg",
+            "publishedAt": "2022-08-03T19:37:19.3917969Z",
+            "content": "By Bernd Debusmann JrBBC News\r\nConspiracy theorist Alex Jones has testified that the 2012 Sandy Hook school shooting was \"100% real\" and that it was wrong to call it a hoax. \r\nThe parents of a child … [+2420 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Taiwan: Pelosi leaves Taipei to sound of Chinese fury",
+            "description": "\"Those who play with fire will not come to a good end,\" warns China's foreign minister after the visit.",
+            "url": "http://www.bbc.co.uk/news/world-asia-62405680",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/E392/production/_126185285_gettyimages-1412590000.jpg",
+            "publishedAt": "2022-08-03T12:07:20.4225723Z",
+            "content": "By Matt MurphyBBC News\r\nMedia caption, Nancy Pelosi in Taiwan: Democracy a source of strength\r\nUS Speaker Nancy Pelosi has left Taiwan after a brief but controversial visit.\r\nMs Pelosi - the most sen… [+4820 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Batgirl movie scrapped months before planned release",
+            "description": "The movie, which had a reported budget of $70m, was filmed entirely in Glasgow.",
+            "url": "http://www.bbc.co.uk/news/uk-scotland-glasgow-west-62406098",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/11E7A/production/_126183337_fjg6kzaxoaefyra.jpg",
+            "publishedAt": "2022-08-03T11:52:24.7972741Z",
+            "content": "The new Batgirl movie has been scrapped by Warner Bros Discovery months before its planned release. \r\nReportedly budgeted at more than $70m (£58m), it was due to be shown in cinemas and on the stream… [+5384 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Arizona Primary: Rusty Bowers, who defied Trump, loses re-election bid",
+            "description": "Rusty Bowers, who testified against Donald Trump in June, loses to an ally of the ex-president.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-62405677",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/11F2E/production/_126181537_gettyimages-1404254712.jpg",
+            "publishedAt": "2022-08-03T09:52:22.5791843Z",
+            "content": "By Matt MurphyBBC News\r\nA Republican who testified against Donald Trump at the 6 January committee has lost an election to a candidate endorsed by the former president. \r\nRusty Bowers aimed to be a R… [+2498 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Ayman al-Zawahiri: How US strike could kill al-Qaeda leader - but not his family",
+            "description": "Extremely precise missile use and study of Zawahiri's habits were key to the targeted US killing.",
+            "url": "http://www.bbc.co.uk/news/world-us-canada-62400923",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/FDC6/production/_126166946_fziaeijxoaeke5c.jpg",
+            "publishedAt": "2022-08-02T23:37:22.3873511Z",
+            "content": "By Bernd Debusmann Jr, BBC News, Washington&amp; Chris Partridge, BBC weapons expert\r\nJust over an hour after sunrise on 31 July, long-time al-Qaeda boss Aman Al-Zawahiri walked out onto the balcony … [+5744 chars]"
+        }
+    ]
+}

@@ -1,3 +1,14 @@
+h1{
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.col{
+  border-radius: 10px;
+}
+
+
+
 .App {
   text-align: center;
 }
