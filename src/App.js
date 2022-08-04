@@ -21,21 +21,38 @@ export default class App extends Component {
     return (
       <div>
         <Router>
-        <NavBar/> 
-        {/* <LoadingBar
-        height={3}
-        color='#f11946'
-        progress={this.state.progress} 
-      /> */}
-        <Routes>
-          <Route path="/general" element={<News apiKey={this.apiKey} key="general" pageSize={this.pageSize} country="in" category="general"/>} /> 
-          <Route path="/business" element={<News apiKey={this.apiKey} key="business" pageSize={this.pageSize} country="in" category="business"/>} /> 
-          <Route path="/entertainment" element={<News apiKey={this.apiKey} key="entertainment" pageSize={this.pageSize} country="in" category="entertainment"/>} />
-          <Route path="/health" element={<News apiKey={this.apiKey} key="health" pageSize={this.pageSize} country="in" category="health"/>} />
-          <Route path="/science" element={<News apiKey={this.apiKey} key="science" pageSize={this.pageSize} country="in" category="science"/>} />
-          <Route path="/sports" element={<News apiKey={this.apiKey} key="sports" pageSize={this.pageSize} country="in" category="sports"/>} />
-          <Route path="/technology" element={<News apiKey={this.apiKey} key="technology" pageSize={this.pageSize} country="in" category="technology"/>} /> 
-        </Routes>
+          <NavBar/> 
+          {/* <LoadingBar
+            height={3}
+            color='#f11946'
+            progress={this.state.progress} 
+          /> */}
+          <Routes>
+            <Route path="/" element={
+              <News key="everything" category="everything"/>
+            } />
+            <Route path="/general" element={
+              <News key="general" category="general"/>
+            } /> 
+            <Route path="/business" element={
+              <News key="business" category="business"/>
+            } /> 
+            <Route path="/entertainment" element={
+              <News key="entertainment" category="entertainment"/>
+            } />
+            <Route path="/health" element={
+              <News key="health" category="health"/>
+            } />
+            <Route path="/science" element={
+              <News key="science" category="science"/>
+            } />
+            <Route path="/sports" element={
+              <News key="sports" category="sports"/>
+            } />
+            <Route path="/technology" element={
+              <News key="technology" category="technology"/>
+            } /> 
+          </Routes>
         </Router>
       </div>
     )
