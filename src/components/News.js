@@ -4,7 +4,12 @@ import Spinner from './Spinner';
 import PropTypes from 'prop-types'
 import InfiniteScroll from "react-infinite-scroll-component";
 
+const BASE_URL = "https://newsapi.org/v2/top-headlines";
+const EVERYTHING_URL = "https://newsapi.org/v2/everything";
+const API_KEY = "aa6f1cc3c36b4582a180a150581c48b2"
+
 export class News extends Component {
+
     static defaultProps = {
         country: 'in',
         pageSize: 8,
@@ -16,9 +21,11 @@ export class News extends Component {
         pageSize: PropTypes.number,
         category: PropTypes.string,
     }
+
     capitalizeFirstLetter = (string) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+
     constructor(props) {
         super(props);
         this.state = {
@@ -30,22 +37,60 @@ export class News extends Component {
         document.title = `${this.capitalizeFirstLetter(this.props.category)} - The Scoop`;
     }
 
-    async updateNews() {
-        // this.props.setProgress(10);
-        const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-        this.setState({ loading: true });
-        let data = await fetch(url);
-        // this.props.setProgress(30);
-        let parsedData = await data.json()
-        // this.props.setProgress(70);
-        this.setState({
-            articles: parsedData.articles,
-            totalResults: parsedData.totalResults,
-            loading: false,
-        })
-        // this.props.setProgress(100);
+    // async updateNews() {
+    //     // this.props.setProgress(10);
+    //     const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    //     this.setState({ loading: true });
+    //     let data = await fetch(url);
+    //     // this.props.setProgress(30);
+    //     let parsedData = await data.json()
+    //     let NewsArray = JSON.stringify(parsedData)
+    //     console.log(NewsArray.articles)
+    //     // this.props.setProgress(70);
+    //     this.setState({
+    //         articles: parsedData.articles,
+    //         totalResults: parsedData.totalResults,
+    //         loading: false,
+    //     })
+    //     // this.props.setProgress(100);
 
+    // }
+
+    async updateNews(){
+        if(this.props.category==="everything"){
+            const url = new URL(EVERYTHING_URL);
+                url.search = new URLSearchParams({
+                    q: "INDIA",
+                    apiKey:API_KEY 
+                });
+            let data = await fetch(url);
+            let parsedData = await data.json();
+            console.log(parsedData.articles)
+            this.setState({
+                articles: parsedData.articles,
+                totalResults: parsedData.totalResults,
+                loading: false,
+            })
+        }
+        else{
+            const url = new URL(BASE_URL);
+                url.search = new URLSearchParams({
+                    country: "in",
+                    category: this.props.category,
+                    apiKey:API_KEY 
+                });
+            let data = await fetch(url);
+            let parsedData = await data.json();
+            console.log(parsedData.articles)
+            this.setState({
+                articles: parsedData.articles,
+                totalResults: parsedData.totalResults,
+                loading: false,
+            })
+        }
     }
+
+
     async componentDidMount() {
         this.updateNews();
     }
@@ -76,14 +121,26 @@ export class News extends Component {
             <>
                 <h1>The Scoop - Top {this.capitalizeFirstLetter(this.props.category)} Headlines</h1>
                 {this.state.loading && <Spinner />}
-                <InfiniteScroll dataLength={this.state.articles.length} next={this.fetchMoreData} hasMore={this.state.articles.length !== this.state.totalResults} loader={<Spinner />} >
+                <InfiniteScroll 
+                    dataLength={this.state.articles.length} 
+                    // next={this.fetchMoreData} 
+                    hasMore={this.state.articles.length !== this.state.totalResults} 
+                    loader={<Spinner />} 
+                >
                     <div className="container">
                         <div className="row">
-                            {this.state.articles.map((element) => {
-                                return <div className="col-md-4" key={element.url}>
-                                    <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
+                            {this.state.articles && this.state.articles.map((element, index) => (
+                                <div className="col-md-4" key={index}>
+                                    <NewsItem 
+                                        title={element.title ? element.title : ""} 
+                                        description={element.description ? element.description : ""} 
+                                        imageUrl={element.urlToImage} 
+                                        newsUrl={element.url} 
+                                        author={element.author} 
+                                        date={element.publishedAt} 
+                                        source={element.source.name} />
                                 </div>
-                            })}
+                            ))}
                         </div>
                     </div>
                 </InfiniteScroll>
