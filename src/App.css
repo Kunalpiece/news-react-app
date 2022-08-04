@@ -3,11 +3,17 @@ h1{
   margin: 40px 0px;
 }
 
-.col{
-  border-radius: 10px;
+.card{
+  height: 80vh;
 }
 
+.card-img{
+  height: 15rem;
+}
 
+.badge{
+  border-radius: 0px 0px 0px 5px !important;
+}
 
 .App {
   text-align: center;
