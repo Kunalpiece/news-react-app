@@ -37,7 +37,7 @@ export class News extends Component {
     }
 
     async updateNews(){
-        if(this.props.category==="everything"){
+        if(this.props.category==="News"){
             const url = new URL(EVERYTHING_URL);
                 url.search = new URLSearchParams({
                     q: "INDIA",
